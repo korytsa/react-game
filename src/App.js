@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Snake from './Snake';
 import Apple from './Apple';
 import Music from './Music';
+import Footer from './Footer';
 
 const appleCoordinates = () => {
   let min = 1;
@@ -139,6 +140,7 @@ export default class App extends Component {
           <Snake snakeDots={this.state.snakeDots}/>
           <Apple dot={this.state.apple}/>
         </div>
+        <Footer />
       </div>
       
     );
