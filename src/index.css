@@ -1,0 +1,66 @@
+.all__field {
+    margin: 50px auto;
+    width: 650px;
+    height: 700px;
+    border: 6px double rgb(103, 133, 124);
+}
+.buttons{
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+}
+button{
+    background-color: rgba(118, 235, 1, 0.623);
+    padding: 1.5%;
+    margin-left: 2%;
+    border: 2px olive double;
+    border-radius: 10px;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button:hover{
+    background-color: rgba(106, 207, 6, 0.623);
+    border: 2px solid rgb(82, 104, 77);
+    cursor: pointer;
+}
+button:active{
+    color: rgb(167, 165, 163);
+}
+.game__field {
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+    height: 600px;
+    border: 6px double rgb(103, 133, 124);
+    background-color: rgba(0, 128, 58, 0.342);
+}
+.snake {
+    position: absolute;
+    width: 2%;
+    height: 2%;
+    background-color: rgb(107, 106, 106);
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 5px;
+    z-index: 2;
+    animation-name: snakes;
+    animation-duration: 0.5s;
+    
+}
+@keyframes snakes{
+    from{
+        background-color: rgb(107, 106, 106);
+    }
+    to{
+        background-color: rgb(253, 194, 0);
+    }
+}
+.apple {
+    position: absolute;
+    width: 2%;
+    height: 2%;
+    border: 2px olive double;
+    border-radius: 5px;
+    background-color: chartreuse;
+    z-index: 1;
+    
+}
