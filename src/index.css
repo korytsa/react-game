@@ -3,11 +3,12 @@
     width: 550px;
     height: 675px;
     border: 6px double rgb(103, 133, 124);
+    overflow:  hidden;
 }
 .buttons{
     display: flex;
     justify-content: left;
-    padding: 20px;
+    padding: 10px;
 }
 button{
     background-color: rgba(118, 235, 1, 0.623);
@@ -69,7 +70,7 @@ button:active{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 10px 0px 6px;
+    padding: 10px 0px 3px;
 }
 .footer a {
     text-decoration: none;
@@ -86,6 +87,6 @@ button:active{
     width: 85px;
 }
 .footer-rsschool__link {
-    margin: 6px 0px 0px 8px;
+    margin: 6px 0px 0px 4px;
 }
 
