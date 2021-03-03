@@ -1,0 +1,92 @@
+.all__field {
+    margin: 30px auto;
+    width: 550px;
+    height: 650px;
+    border: 6px double rgb(103, 133, 124);
+    overflow:  hidden;
+}
+.buttons{
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+button{
+    background-color: rgba(118, 235, 1, 0.623);
+    padding: 1.5%;
+    margin-left: 2%;
+    border: 2px olive double;
+    border-radius: 10px;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button:hover{
+    background-color: rgba(106, 207, 6, 0.623);
+    border: 2px solid rgb(82, 104, 77);
+    cursor: pointer;
+}
+button:active{
+    color: rgb(167, 165, 163);
+}
+.game__field {
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    border: 6px double rgb(103, 133, 124);
+    background-color: rgba(0, 128, 58, 0.342);
+}
+.snake {
+    position: absolute;
+    width: 2%;
+    height: 2%;
+    background-color: rgb(107, 106, 106);
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 5px;
+    z-index: 2;
+    animation-name: snakes;
+    animation-duration: 0.5s;
+    
+}
+@keyframes snakes{
+    from{
+        background-color: rgb(107, 106, 106);
+    }
+    to{
+        background-color: rgb(253, 194, 0);
+    }
+}
+.apple {
+    position: absolute;
+    width: 2%;
+    height: 2%;
+    border: 2px olive double;
+    border-radius: 5px;
+    background-color: chartreuse;
+    z-index: 1;
+    
+}
+.footer {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0px 3px;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer__link {
+    color: #000;
+    border-bottom: 1px solid #cdcdcd;
+}
+.footer-rsschool {
+    margin: 10px auto;
+    display: flex;
+}
+.footer-rsschool__img {
+    width: 85px;
+}
+.footer-rsschool__link {
+    margin: 6px 0px 0px 4px;
+}
+
